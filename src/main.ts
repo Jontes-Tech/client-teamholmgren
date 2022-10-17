@@ -24,7 +24,7 @@ if (!initialLocale && detectedLocale.indexOf('-') > 0) {
 if (!initialLocale) initialLocale = fallbackLocale;
 
 init({
-  initialLocale: "se",
+  initialLocale: getLocaleFromPathname(/^\/(.*?)\//),
   fallbackLocale: "en",
 });
 

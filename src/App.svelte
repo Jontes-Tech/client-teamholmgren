@@ -109,24 +109,23 @@
                 <li
                   class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700"
                 >
-                  <a
-                    href="/cv/{localStorage.getItem(
-                      'svelte-i18n-locale'
-                    )}/martin.pdf"
-                    class="group"
+                  <span
+                    class="mr-8 text-lg font-semibold text-gray-700 leading-snugish"
                   >
-                    <span
-                      class="mr-8 text-lg font-semibold text-gray-700 leading-snugish"
-                    >
-                      CV:
-                    </span>
-                    PDF
-                    <span
-                      class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
-                    >
-                      ↗
-                    </span>
-                  </a>
+                    CV:
+                  </span>
+                  <a href="/cv/en/martin.pdf">English</a>
+                  <span
+                    class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
+                  >
+                    ↗
+                  </span>
+                  <a href="/cv/se/martin.pdf">Svenska</a>
+                  <span
+                    class="inline-block font-normal transition duration-100 ease-in text-gray-550 print:text-black group-hover:text-gray-700"
+                  >
+                    ↗
+                  </span>
                 </li>
                 <li
                   class="mt-1 leading-normal transition duration-100 ease-in text-gray-550 text-md hover:text-gray-700"
@@ -160,6 +159,52 @@
               </p>
             </section>
           </div>
+        </section>
+        <section class="mb-2 break-inside-avoid">
+          <header>
+            <h3 class="text-lg font-semibold text-gray-650 leading-snugish">
+              {$_("job2bemade")}
+            </h3>
+          </header>
+          <ul class="list-disc mt-2.1 text-md text-gray-700 leading-normal">
+            <!-- <li>
+              Ni möjligheterna i att utveckla en hållbar verksamhet i den gröna
+              omställningen och vill skapa en egen organisatorisk kraft för
+              framgång på den resan
+            </li>
+            <li>
+              Det finns behov av analys och förstudier innan strategin kan
+              formas
+            </li>
+            <li>
+              Ni behöver ett bollplank och extra kraft för att utveckla den
+              hållbara affären, forma färdvägen och genomföra planen
+            </li>
+            <li>
+              Ni står inför stora förändringar. Eller ni har genomfört
+              förändringar men inte nått ända fram
+            </li>
+            <li>
+              Ni behöver ni en katalysator eller injektion med erfarenhet, nya
+              idéer och utifrånperspektiv för att komma framåt mot uppsatta mål
+            </li> -->
+
+            <li>
+              {$_('jobl1')}
+            </li>
+            <li>
+              {$_('jobl2')}
+            </li>
+            <li>
+              {$_('jobl3')}
+            </li>
+            <li>
+              {$_('jobl4')}
+            </li>
+            <li>
+              {$_('jobl5')}
+            </li>
+          </ul>
         </section>
       </div>
     </div>
