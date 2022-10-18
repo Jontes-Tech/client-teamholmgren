@@ -167,28 +167,6 @@
             </h3>
           </header>
           <ul class="list-disc mt-2.1 text-md text-gray-700 leading-normal">
-            <!-- <li>
-              Ni möjligheterna i att utveckla en hållbar verksamhet i den gröna
-              omställningen och vill skapa en egen organisatorisk kraft för
-              framgång på den resan
-            </li>
-            <li>
-              Det finns behov av analys och förstudier innan strategin kan
-              formas
-            </li>
-            <li>
-              Ni behöver ett bollplank och extra kraft för att utveckla den
-              hållbara affären, forma färdvägen och genomföra planen
-            </li>
-            <li>
-              Ni står inför stora förändringar. Eller ni har genomfört
-              förändringar men inte nått ända fram
-            </li>
-            <li>
-              Ni behöver ni en katalysator eller injektion med erfarenhet, nya
-              idéer och utifrånperspektiv för att komma framåt mot uppsatta mål
-            </li> -->
-
             <li>
               {$_('jobl1')}
             </li>
@@ -204,6 +182,20 @@
             <li>
               {$_('jobl5')}
             </li>
+          </ul>
+        </section>
+        <section class="mb-2 break-inside-avoid">
+          <header>
+            <h3 class="text-lg font-semibold text-gray-650 leading-snugish">
+              {$_("possibilities")}
+            </h3>
+          </header>
+          <ul class="list-disc mt-2.1 text-md text-gray-700 leading-normal">
+            <li>{$_('offer1')}</li>
+            <li>{$_('offer2')}</li>
+            <li>{$_('offer3')}</li>
+            <li>{$_('offer4')}</li>
+            <li>{$_('offer5')}</li>
           </ul>
         </section>
       </div>
