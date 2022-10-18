@@ -6,16 +6,7 @@
   <!-- Navbar -->
   <nav class="flex items-center justify-between flex-wrap bg-slate-500 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <svg
-        class="fill-current h-8 w-8 mr-2"
-        width="54"
-        height="54"
-        viewBox="0 0 54 54"
-        xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
-        /></svg
-      >
+      <!-- Logo may appear here -->
       <span class="font-semibold text-xl tracking-tight">TEAM Holmgren</span>
     </div>
     <div class="text-sm lg:flex-grow">
@@ -44,7 +35,7 @@
       <div class="text-sm lg:flex-grow" />
       <div>
         <a
-          href="#contact"
+          href="mailto:martin@teamholmgren.com"
           class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
           >{$_("contactUs")}</a
         >
@@ -55,7 +46,7 @@
   <main class="font-jost hyphens-manual flex-grow pb-12">
     <!-- Page -------------------------------------------------------------------------------------------------------->
     <div
-      class="p-3 mx-auto my-auto bg-gray-100 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white"
+      class="p-3 mx-auto my-auto bg-gray-100 backdrop-filter backdrop-blur-2xl bg-opacity-60 border-4 border-gray-700 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o lg:h-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 lg:mt-6 rounded-2xl print:bg-white"
     >
       <!-- Name ---------------------------------------------------------------------------------------------------->
       <header
@@ -81,7 +72,7 @@
         <section class="pb-4 mt-4 first:mt-0">
           <!-- To keep in the same column -------------------------------------------------------------------------->
           <div class="break-inside-avoid">
-            <h3><b>M</b>artin</h3>
+            <h3>Martin</h3>
             <img
               alt="Martin Holmgren from TEAM Holmgren speaking at a confrerence"
               class="rounded w-64 shadow-lg"
@@ -168,19 +159,19 @@
           </header>
           <ul class="list-disc mt-2.1 text-md text-gray-700 leading-normal">
             <li>
-              {$_('jobl1')}
+              {$_("jobl1")}
             </li>
             <li>
-              {$_('jobl2')}
+              {$_("jobl2")}
             </li>
             <li>
-              {$_('jobl3')}
+              {$_("jobl3")}
             </li>
             <li>
-              {$_('jobl4')}
+              {$_("jobl4")}
             </li>
             <li>
-              {$_('jobl5')}
+              {$_("jobl5")}
             </li>
           </ul>
         </section>
@@ -191,11 +182,11 @@
             </h3>
           </header>
           <ul class="list-disc mt-2.1 text-md text-gray-700 leading-normal">
-            <li>{$_('offer1')}</li>
-            <li>{$_('offer2')}</li>
-            <li>{$_('offer3')}</li>
-            <li>{$_('offer4')}</li>
-            <li>{$_('offer5')}</li>
+            <li>{$_("offer1")}</li>
+            <li>{$_("offer2")}</li>
+            <li>{$_("offer3")}</li>
+            <li>{$_("offer4")}</li>
+            <li>{$_("offer5")}</li>
           </ul>
         </section>
       </div>
@@ -208,7 +199,7 @@
     object-bottom"
       style="background-color: rgba(0, 0, 0);"
     >
-      © 2022 Copyright Jonatan Holmgren freelancing for Team Holmgren AB
+      © 2022 Copyright Jonatan Holmgren. THIS SITE MUST NOT BE USED COMMERCIALLY AND IS FOR DEMO USE ONLY.
     </div>
   </footer>
   <!-- End of footer -->
