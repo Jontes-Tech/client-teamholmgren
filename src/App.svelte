@@ -76,7 +76,7 @@
             <img
               alt="Martin Holmgren from TEAM Holmgren speaking at a confrerence"
               class="rounded w-64 shadow-lg"
-              src="/martin.jpeg"
+              src="/img/martin.webp"
             />
             <section class="pb-2 mb-2 border-b-2 break-inside-avoid">
               <ul class="list-inside pr-7">
