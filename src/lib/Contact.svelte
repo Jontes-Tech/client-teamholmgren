@@ -11,7 +11,7 @@
 
     {$_('organisationNumber')}: XXXXXXXX
 
-    Moms/VAT {$_('number')}
+    Moms/VAT {$_('number')}: XXXXXXXX
 
     {$_('phoneNum')}: <a class='no-underline hover:underline font-bold' href='tel:46705429002'>+46 70 542 90 02</a>
 
