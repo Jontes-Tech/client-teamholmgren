@@ -7,8 +7,8 @@ import se from "./translations/se.json"
 addMessages("en", en);
 addMessages("se", se);
 
-const fallbackLocale = 'en';
-const lngs = [fallbackLocale, 'se'];
+const fallbackLocale = 'se';
+const lngs = [fallbackLocale, 'en'];
 
 locale.subscribe((lng) => {
   if (lng) localStorage.setItem('svelte-i18n-locale', lng);
@@ -25,7 +25,7 @@ if (!initialLocale) initialLocale = fallbackLocale;
 
 init({
   initialLocale: getLocaleFromPathname(/^\/(.*?)\//),
-  fallbackLocale: "en",
+  fallbackLocale: "se",
 });
 
 const app = new App({

@@ -2,8 +2,5 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-image: url(/img/background.webp);
-  background-size: cover;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: #14532d;
 }
