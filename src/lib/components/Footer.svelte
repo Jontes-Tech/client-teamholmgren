@@ -1,3 +1,6 @@
+<script lang="ts">
+  import { _ } from 'svelte-i18n'
+</script>
 <footer
   class="p-4 bg-neutral-800 rounded-t-lg shadow md:flex md:items-center md:justify-between md:p-6"
 >
@@ -11,8 +14,8 @@
     class="flex flex-wrap items-center mt-3 text-s text-gray-400 sm:mt-0"
   >
     <li>
-      <a href="/cv/en/martin.pdf" class="mr-4 hover:underline md:mr-6 "
-        >Martin CV English</a
+      <a href="/cv/{$_('lang')}/martin.pdf" class="mr-4 hover:underline md:mr-6 "
+        >Martin CV</a
       >
     </li>
   </ul>
