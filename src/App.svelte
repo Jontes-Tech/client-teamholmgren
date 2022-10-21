@@ -1,21 +1,26 @@
 <script lang="ts">
   import { _, locale } from "svelte-i18n";
-  import Main from "./lib/Main.svelte";
-  import Contact from "./lib/Contact.svelte";
-  import Info from "./lib/Info.svelte";
-  import Offer from "./lib/Offer.svelte"
+  import Main from "./lib/pages/Main.svelte";
+  import Contact from "./lib/pages/Contact.svelte";
+  import Info from "./lib/pages/Info.svelte";
+  import Offer from "./lib/pages/Offer.svelte";
+  import Footer from "./lib/components/Footer.svelte";
   let page = document.location.hash;
   window.onpopstate = function (event) {
     page = document.location.hash;
   };
 </script>
 
-<div class="flex flex-col">
+<div class="flex flex-col min-h-screen">
   <!-- Navbar -->
   <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <a href="/#home" class="font-semibold text-xl tracking-tight"
-        ><img class='h-10' alt='logo of Team Holmgren' src='/img/logo.webp'></a
+        ><img
+          class="h-10"
+          alt="logo of Team Holmgren"
+          src="/img/logo.webp"
+        /></a
       >
     </div>
     <div class="text-sm lg:flex-grow">
@@ -67,13 +72,17 @@
     </div>
   </nav>
   <!-- End of Navbar -->
-  {#if page === "#contact"}
-    <Contact />
-  {:else if page === "#info"}
-    <Info />
-  {:else if page === "#offer"}
-    <Offer/>
-  {:else}
-    <Main />
-  {/if}
+  <div class="grow h-full">
+    {#if page === "#contact"}
+      <Contact />
+    {:else if page === "#info"}
+      <Info />
+    {:else if page === "#offer"}
+      <Offer />
+    {:else}
+      <Main />
+    {/if}
+  </div>
+
+  <Footer/>
 </div>

@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <div class="text-white md:p-10 h-screen">
+  <div class="text-white md:p-10">
     <p class="text-xl bg-green-800 p-10 md:rounded md:shadow-md">
       {$_("infotext")}
     </p>
