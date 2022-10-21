@@ -13,7 +13,7 @@
 
 <div class="flex flex-col min-h-screen">
   <!-- Navbar -->
-  <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-6">
+  <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <a href="/#home" class="font-semibold text-xl tracking-tight"
         ><img
@@ -65,7 +65,7 @@
         >
         <a
           href="/#contact"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-green-600 mt-4 lg:mt-0"
           >{$_("contactUs")}</a
         >
       </div>
