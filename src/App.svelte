@@ -17,9 +17,9 @@
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <a href="/#home" class="font-semibold text-xl tracking-tight"
         ><img
-          class="h-10"
+          class="h-10 w-15"
           alt="logo of Team Holmgren"
-          src="/img/logo.webp"
+          src="/img/logo.svg"
         /></a
       >
     </div>
@@ -80,6 +80,7 @@
     {:else if page === "#offer"}
       <Offer />
     {:else}
+      <script>window.location.href = '#home'</script>
       <Main />
     {/if}
   </div>

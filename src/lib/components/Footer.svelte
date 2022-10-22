@@ -7,7 +7,7 @@
   <span class="text-sm sm:text-center text-gray-400"
     >© 2022 Team Holmgren AB. All Rights Reserved. Developed by <a
       class="hover:underline"
-      href="https://jontes.page">Jonatan Holmgren</a
+      href="https://jontes.page">Jonte</a
     >.
   </span>
   <ul
