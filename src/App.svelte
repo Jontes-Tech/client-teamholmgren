@@ -9,19 +9,29 @@
   window.onpopstate = function (event) {
     page = document.location.hash;
   };
+  let screenwidth = window.innerWidth
+  window.addEventListener("resize", () => screenwidth = window.innerWidth);
 </script>
 
 <div class="flex flex-col min-h-screen">
   <!-- Navbar -->
   <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-      <a href="/#home" class="font-semibold text-xl tracking-tight"
-        ><img
-          class="h-10 w-15"
-          alt="logo of Team Holmgren"
-          src="/img/logo.svg"
-        /></a
-      >
+      <a href="/#home" class="font-semibold text-xl tracking-tight">
+        {#if screenwidth < 220}
+          <img
+            class="h-10"
+            alt="logo of Team Holmgren"
+            src="/img/logo-tiny.svg"
+          />
+        {:else}
+          <img
+            class="h-10"
+            alt="logo of Team Holmgren"
+            src="/img/logo.svg"
+          />
+        {/if}
+      </a>
     </div>
     <div class="text-sm lg:flex-grow">
       <select
@@ -80,10 +90,12 @@
     {:else if page === "#offer"}
       <Offer />
     {:else}
-      <script>window.location.href = '#home'</script>
+      <script>
+        window.location.href = "#home";
+      </script>
       <Main />
     {/if}
   </div>
 
-  <Footer/>
+  <Footer />
 </div>
