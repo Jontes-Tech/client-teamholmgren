@@ -18,7 +18,7 @@
   <nav class="flex items-center justify-between flex-wrap bg-neutral-800 p-3">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <a href="/#home" class="font-semibold text-xl tracking-tight">
-        {#if screenwidth < 220}
+        {#if screenwidth < 300}
           <img
             class="h-10"
             alt="logo of Team Holmgren"

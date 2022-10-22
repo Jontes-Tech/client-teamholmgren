@@ -11,7 +11,7 @@
       <h3 class="text-lg text-gray-400 "> {$_('martin-work')}</h3>
       <p class="text-sm text-gray-400 mt-4">{$_('mainpage-quote1')} </p>
       <p class="text-sm text-gray-400 mt-4">{$_('mainpage-quote2')} </p>
-      <button on:click={() => window.location.href = '/#info'} class="bg-green-900 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold racking-wide">{$_('readmore')}</button>
+      <button on:click={() => window.location.href = '/#info'} class="bg-green-600 px-8 py-2 mt-8 rounded-xl shadow-lg text-gray-100 font-semibold racking-wide">{$_('readmore')}</button>
     </div>
   </div>
 </main>
