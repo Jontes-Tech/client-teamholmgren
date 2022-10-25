@@ -10,6 +10,7 @@
     <div class="bg-zinc-900 p-10 mt-5 md:rounded-lg md:shadow-md">
       <h2 class="text-2xl">{$_("competencies")}:</h2>
       <div class="mt-6 sm:columns-2 p-5">
+        <ul class='list-disc list-outside'>
         <div>
           <li>{$_("competencies01")}</li>
           <li>{$_("competencies02")}</li>
@@ -37,6 +38,7 @@
           <li>{$_("competencies22")}</li>
           <li>{$_("competencies23")}</li>
         </div>
+      </ul>
       </div>
     </div>
     <section class="p-6 md:p-12 text-center md:text-left">
