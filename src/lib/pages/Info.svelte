@@ -58,7 +58,6 @@
                   {$_('summaryText')}
                 </p>
                 <p class="font-semibold text-xl mb-2 text-gray-400">Martin Holmgren</p>
-                <p class="font-semibold text-gray-500 mb-0">CEO</p>
               </div>
             </div>
           </div>
