@@ -17,4 +17,9 @@
 
     Mail: <a class='no-underline hover:underline font-bold' href='mailto:martin@teamholmgren.com'>martin@teamholmgren.com</a>
   </p>
+  <img
+  src='./img/road.webp'
+  alt='alttext'
+  class='w-full h-80 object-cover rounded-lg shadow-lg'
+  >
 </main>
