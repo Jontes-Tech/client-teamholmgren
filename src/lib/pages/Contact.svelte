@@ -3,23 +3,29 @@
 </script>
 
 <main class="font-jost hyphens-manual flex-grow pb-12 m-10">
-  <p class='text-white whitespace-pre-line '>
-    {$_('billingAdress')}:
-    Team Holmgren AB
-    Rankhyttan 50
-    791 92 Falun
+  <p class="text-white whitespace-pre-line ">
+    {$_("billingAdress")}: TEAM Holmgren Consulting AB Rankhyttan 50 791 92
+    Falun
 
-    {$_('organisationNumber')}: XXXXXXXX
+    {$_("organisationNumber")}: 559404-6798
 
-    Moms/VAT {$_('number')}: XXXXXXXX
+    <!-- TODO: First, replace the x:es with the VAT number, then uncomment the code and lastly remove this comment. -->
+    <!-- Moms/VAT {$_('number')}: XXXXXXXX -->
 
-    {$_('phoneNum')}: <a class='no-underline hover:underline font-bold' href='tel:46705429002'>+46 70 542 90 02</a>
+    {$_("phoneNum")}:
+    <a class="no-underline hover:underline font-bold" href="tel:46705429002"
+      >+46 70 542 90 02</a
+    >
 
-    Mail: <a class='no-underline hover:underline font-bold' href='mailto:martin@teamholmgren.com'>martin@teamholmgren.com</a>
+    Mail:
+    <a
+      class="no-underline hover:underline font-bold"
+      href="mailto:martin@teamholmgren.com">martin@teamholmgren.com</a
+    >
   </p>
   <img
-  src='./img/road.webp'
-  alt='alttext'
-  class='w-full h-80 object-cover rounded-lg shadow-lg'
-  >
+    src="./img/road.webp"
+    alt="alttext"
+    class="w-full h-80 object-cover rounded-lg shadow-lg"
+  />
 </main>
