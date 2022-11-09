@@ -8,6 +8,7 @@
   <span class="text-sm sm:text-center text-gray-400"
     >© 2022 TEAM Holmgren Consulting AB. All Rights Reserved. Developed by <a
       class="hover:underline"
+      rel="nofollow"
       href="https://jontes.page">Jonte</a
     >.
   </span>
