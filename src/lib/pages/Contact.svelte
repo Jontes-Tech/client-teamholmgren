@@ -6,7 +6,8 @@
   <p class="text-white whitespace-pre-line ">
     {$_("billingAdress")}: 
       TEAM Holmgren Consulting AB
-      Rankhyttan 50 791 92
+      Rankhyttan 50
+      791 92
       Falun
 
     {$_("organisationNumber")}: 559404-6798
