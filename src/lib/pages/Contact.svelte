@@ -7,8 +7,7 @@
     {$_("billingAdress")}: 
       TEAM Holmgren Consulting AB
       Rankhyttan 50
-      791 92
-      Falun
+      791 92 Falun
 
     {$_("organisationNumber")}: 559404-6798
     
