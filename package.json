@@ -24,6 +24,7 @@
     "vite": "^3.2.3"
   },
   "dependencies": {
+    "ps-std": "^0.1.6",
     "svelte-i18n": "^3.4.0"
   }
 }

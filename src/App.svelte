@@ -5,12 +5,15 @@
   import Info from "./lib/pages/Info.svelte";
   import Offer from "./lib/pages/Offer.svelte";
   import Footer from "./lib/components/Footer.svelte";
-  let page = document.location.hash;
-  window.onpopstate = function (event) {
-    page = document.location.hash;
-  };
+  import navigator from './lib/navigator'
+  import Martinnum from "./lib/pages/Martinnum.svelte";
   let screenwidth = window.innerWidth
   window.addEventListener("resize", () => screenwidth = window.innerWidth);
+  let route = location.pathname;
+  navigator.subscribe((newRoute) => (route = newRoute));
+  if (window.location.hash) {
+    window.location.href = "/"+window.location.hash.substring(1)
+  }
 </script>
 
 <div class="flex flex-col min-h-screen">
@@ -59,22 +62,22 @@
       <div class="text-sm lg:flex-grow" />
       <div>
         <a
-          href="/#home"
+          href="/"
           class="inline-block text-sm px-4 py-2 text-white border-white mt-4 lg:mt-0"
           >{$_("home")}</a
         >
         <a
-          href="/#info"
+          href="/info"
           class="inline-block text-sm px-4 py-2 text-white border-white mt-4 lg:mt-0"
           >{$_("information")}</a
         >
         <a
-          href="/#offer"
+          href="/offer"
           class="inline-block text-sm px-4 py-2 text-white border-white mt-4 lg:mt-0"
           >{$_("offer")}</a
         >
         <a
-          href="/#contact"
+          href="/contact"
           class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-green-600 mt-4 lg:mt-0"
           >{$_("contactUs")}</a
         >
@@ -83,16 +86,15 @@
   </nav>
   <!-- End of Navbar -->
   <div class="grow h-full">
-    {#if page === "#contact"}
+    {#if route === "/contact"}
       <Contact />
-    {:else if page === "#info"}
+    {:else if route === "/info"}
       <Info />
-    {:else if page === "#offer"}
+    {:else if route === "/offer"}
       <Offer />
+      {:else if route === "/+46705429002"}
+      <Martinnum/>
     {:else}
-      <script>
-        window.location.href = "#home";
-      </script>
       <Main />
     {/if}
   </div>

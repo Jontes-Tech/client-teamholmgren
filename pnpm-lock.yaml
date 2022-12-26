@@ -6,6 +6,7 @@ specifiers:
   autoprefixer: ^10.4.13
   cssnano: ^5.1.14
   postcss: ^8.4.18
+  ps-std: ^0.1.6
   svelte: ^3.52.0
   svelte-check: ^2.9.2
   svelte-i18n: ^3.4.0
@@ -16,6 +17,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  ps-std: 0.1.6
   svelte-i18n: 3.4.0_svelte@3.52.0
 
 devDependencies:
@@ -1364,6 +1366,10 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
+
+  /ps-std/0.1.6:
+    resolution: {integrity: sha512-363nSS/KXlvf92zDPo3BEJ5Ghwuzf/RQUpg4VkK/lsXol6Fxmt88qofiuhmvQfeAD1XYySeX13updBNwATRYRA==}
+    dev: false
 
   /queue-microtask/1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}

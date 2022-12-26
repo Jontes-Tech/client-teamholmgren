@@ -12,7 +12,7 @@
     {$_("organisationNumber")}: 559404-6798
     
     {$_("phoneNum")}:
-    <a class="no-underline hover:underline font-bold" href="tel:46705429002"
+    <a class="no-underline hover:underline font-bold" href="tel:+46705429002"
       >+46 70 542 90 02</a
     >
 
