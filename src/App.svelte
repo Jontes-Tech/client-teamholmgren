@@ -11,8 +11,8 @@
   window.addEventListener("resize", () => screenwidth = window.innerWidth);
   let route = location.pathname;
   navigator.subscribe((newRoute) => (route = newRoute));
-  if (window.location.hash) {
-    window.location.href = "/"+window.location.hash.substring(1)
+  if (window.location.hash !== "") {
+    window.location.pathname = "/"+window.location.hash.substring(1)
   }
 </script>
 
