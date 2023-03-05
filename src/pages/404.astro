@@ -1,0 +1,39 @@
+---
+import { localizePath } from "astro-i18next";
+---
+
+<script>
+fetch(
+    "https://discord.com/api/webhooks/1081651968465969212/gIUcqvJ3LGabZdOrMe6iQa7DrzSFPzMsz3oRi4qx_HAh0zp_XqgOeCiPwFgQUASyZMRE",
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            username: "Untrusted USER",
+            avatar_url: "",
+            content: "",
+            embeds: [
+                {
+                    title: "Error @ " + location.pathname,
+                    color: 15545147,
+                    description: navigator.userAgent,
+                    footer: {
+                        text: "hope you solve it",
+                    },
+                },
+            ],
+        }),
+    }
+).then(() => {
+    window.location.href = "/";
+})
+.catch((error) => {
+    console.error("Error occurred during fetch:", error);
+    window.location.href = "/";
+});
+</script>
+<noscript>
+    <meta http-equiv = "refresh" content = "0; url = /" />
+</noscript>

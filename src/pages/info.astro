@@ -1,0 +1,74 @@
+---
+import { changeLanguage, t } from "i18next";
+import Layout from "../layout.astro";
+
+changeLanguage("sv");
+---
+<Layout title="Information">
+<main class="m-4">
+    <div class="text-white md:p-10">
+      <p class="text-xl bg-green-800 p-10 md:rounded md:shadow-md">
+        {t("infotext")}
+      </p>
+      <div class="bg-zinc-900 p-10 mt-5 md:rounded-lg md:shadow-md">
+        <h2 class="text-2xl">{t("competencies")}:</h2>
+        <div class="mt-6 sm:columns-2 p-5">
+          <ul class='list-disc list-outside'>
+          <div>
+            <li>{t("competencies01")}</li>
+            <li>{t("competencies02")}</li>
+            <li>{t("competencies03")}</li>
+            <li>{t("competencies04")}</li>
+            <li>{t("competencies05")}</li>
+            <li>{t("competencies06")}</li>
+            <li>{t("competencies07")}</li>
+            <li>{t("competencies08")}</li>
+            <li>{t("competencies09")}</li>
+            <li>{t("competencies10")}</li>
+            <li>{t("competencies11")}</li>
+          </div>
+          <div>
+            <li>{t("competencies12")}</li>
+            <li>{t("competencies13")}</li>
+            <li>{t("competencies14")}</li>
+            <li>{t("competencies15")}</li>
+            <li>{t("competencies16")}</li>
+            <li>{t("competencies17")}</li>
+            <li>{t("competencies18")}</li>
+            <li>{t("competencies19")}</li>
+            <li>{t("competencies20")}</li>
+            <li>{t("competencies21")}</li>
+            <li>{t("competencies22")}</li>
+            <li>{t("competencies23")}</li>
+          </div>
+        </ul>
+        </div>
+      </div>
+      <section class="p-6 md:p-12 text-center md:text-left">
+        <div class="flex justify-center">
+          <div class="max-w-6xl">
+            <div class="block p-6 rounded-lg shadow-lg bg-zinc-900 m-4">
+              <div class="md:flex md:flex-row">
+                <div
+                  class="md:w-96 w-36 flex justify-center items-center mb-6 lg:mb-0 mx-auto md:mx-0"
+                >
+                  <img
+                    src="/img/martin-forest.webp"
+                    class="rounded-full shadow-md"
+                    alt="Martin Holmgren in a forest with a smile on his face."
+                  />
+                </div>
+                <div class="md:ml-6">
+                  <p class="text-white mb-6">
+                    {t('summaryText')}
+                  </p>
+                  <p class="font-semibold text-xl mb-2 text-gray-400">Martin Holmgren</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</Layout>
